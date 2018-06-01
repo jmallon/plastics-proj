@@ -6,8 +6,6 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 
 
-def about(request):
-    return render(request, 'blog/about.html',{})
 
 def index(request):
     return render(request, 'blog/index.html',{})
