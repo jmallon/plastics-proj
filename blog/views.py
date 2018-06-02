@@ -4,11 +4,14 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
-
-
+from django.views.generic.base import TemplateView
 
 def index(request):
-    return render(request, 'index.html',{})
+    """
+    View function for home page of site.
+    """
+    return render(request,'index.html',{})
+
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
