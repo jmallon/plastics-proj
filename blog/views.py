@@ -6,13 +6,12 @@ from django.shortcuts import render, get_object_or_404
 from .forms import PostForm
 from django.views.generic.base import TemplateView
 
+def index(request):
+    """
+    View function for home page of site.
+    """
+    return render(request,'index.html',{})
 
-
-class HomePageView(TemplateView):
-    template_name = "index.html"
-    def get_context_data(self, **kwargs):
-        context = super(HomePageView, self).get_context_data(**kwargs)
-        return context
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

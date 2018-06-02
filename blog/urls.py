@@ -1,11 +1,10 @@
 from django.conf.urls import url
 from . import views
-from myapp.views import HomePageView
 
 
 
 urlpatterns = [
-    url(r'^$', HomePageView.as_view(), name='index'),
+    path(r'^$', views.index, name='index'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^post/new/$', views.post_new, name='post_new'),
     url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
