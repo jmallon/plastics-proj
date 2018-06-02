@@ -7,3 +7,4 @@ db.sqlite3
 .DS_Store
 blog/__pycache__
 scrap code
+blog/templates/blog/index.html
