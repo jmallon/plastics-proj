@@ -8,7 +8,7 @@ from .forms import PostForm
 
 
 def index(request):
-    return render(request, 'blog/index.html',{})
+    return render(request, 'index.html',{})
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
