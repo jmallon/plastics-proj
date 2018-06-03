@@ -7,3 +7,4 @@ myvenv
 blog/__pycache__
 scrap code
 blog/templates/blog/index.html
+db.sqlite3
