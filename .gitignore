@@ -2,8 +2,9 @@
 *~
 __pycache__
 myvenv
-/static
+css
 .DS_Store
 blog/__pycache__
 scrap code
 blog/templates/blog/index.html
+db.sqlite3
