@@ -1,40 +1,68 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
-
+<link rel="stylesheet" src={% static 'blog.css' %}>
 {% block content %}
-<div class="container-fluid text-center">
+<div class="container text-center">
   <div class="row intro">
-    <div class="col-sm-12 text-left">
-      <h1>WHAT IS PLASTIC-WATCH?</h1>
-      <div class="col-md-9 order-md-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-sm-12 text-left"
+    style="background-color:#07889B; color:#ffffff; padding: 10px 20px;">
+      <h1>WHAT IS "PLASTIC-WATCH"?</h1>
+      <div class="col-md-8 order-md-1">
+        <p class="lead" style="text-align: justify">We want to change how people think about eating out.
+          Do you go to restaurants and automatically get plastic straws in your drinks?
+          Or plastic kid’s cups? Or take-out containers that come in plastic bags
+          with extra plastic utensils that immediately get thrown in the trash?
+          All of this “extra” plastic is a social norm for us…and most of it ends
+          up in the ocean! Sea turtles, whales, fish, and birds are just a few of
+          the marine creatures that end up ingesting or tangled up in this plastic.
+          <br><br>
+          With the PlasticWatch project, we are partnering with local restaurants
+          in Maryland to offer alternatives to these products, such as biodegradable
+          straws or the option of having no straw at all! We also want to educate
+          people about how their daily choices impact their local environment.
+          Take our survey and learn about some of these impacts, while enrolling in
+          a chance to win a free boat ride on a research cruise on the Patuxent River!
+          </p>
       </div>
-      <div class="col-md-3 order-md-2">
-        <img class="featurette-image img-rounded" alt="300x300" style="width: 300px; height: 300px; margin: 15px;" src="{% static 'images/dolphin.jpeg' %}">
+      <div class="col-md-4 order-md-2">
+        <img class="intro-image img-rounded"
+        style="width: 350px; height: 399px; margin: 0px 50px 25px 0px;"
+        src="{% static 'images/striped-straws-crop.jpg' %}">
       </div>
     </div>
   </div>
   <hr class ="divider 1">
-  <div class = "row diagram">
-    <p><span="center">plastic life cycle diagram goes here</span></p>
+  <div class = "row diagram"
+  style="color:#ffffff; background-color:#EEAA7B; padding: 10px 0px;">
+    <h2 style="text-align: left; padding: 0px 15px">
+      What is plastic and what does it do to the environment?
+    </h2>
+    <h4 style="font-size: 1.5em; padding: 25px 50px 50px; text-align: justify">
+      Plastic is an organic polymer made up of long, well-packed carbon chains
+      that makes it almost impossible to break down on its own. When rain or
+      strong winds come through, they blow over trashcans or wash trash from the
+      streets or highways into local waterways. These waterways lead to the
+      Chesapeake Bay and the ocean, where animals like sea turtles and birds
+      mistake plastic trash for food. Large pieces of plastic like bags and
+      straws can cause obstructions in the airways and digestive systems of these
+      animals, leading to death. Small pieces of plastic, called “microplastics”,
+      can accumulate in their stomaches and lead to eventual starvation and
+      sickness as they become unable to store food and absorb toxic chemicals
+      from the plastic. Plastic also floats in the ocean, getting caught up in
+      the currents and forming “trash islands” that transport invasive species.
+    </h4>
+    <img class="trash life cycle img-rounded"
+    style="width: 660px; height: 381px; margin: 0px 25px 25px; margin-left: auto; margin-right: auto;"
+    src="{% static 'images/trash-travel-diagram.jpg' %}">
   </div>
   <hr class="divider 2">
-  <div class = "animal conservation">
+  <div class = "animal conservation"
+  style="background-color:#66B9BF; color:#ffffff; padding: 25px">
     <div class="row animal 1">
       <div class="col-md-3">
-        <img class="img-rounded" alt="200x200" style="width: 200px; height: 200px; margin: 10px;" src="{% static 'images/seaturtle.jpeg' %}">
+        <img class="img-rounded"
+        style="width: 250px; height: 187px; margin: 10px;"
+        src="{% static 'images/seaturtle2.jpg' %}">
       </div>
       <div class="col-md-9">
         <p>info about animal 1 goes here</p>
@@ -42,7 +70,9 @@
     </div>
     <div class="row animal 2">
       <div class="col-md-3">
-        <img class="img-rounded" alt="200x200" style="width: 200px; height: 200px; margin: 10px;" src="{% static 'images/oyster.JPG' %}">
+        <img class="img-rounded"
+         style="width: 250px; height: 153px; margin: 10px;"
+         src="{% static 'images/whale.png' %}">
       </div>
       <div class="col-md-9">
         <p>info about animal 2 goes here</p>
@@ -50,7 +80,9 @@
     </div>
     <div class="row animal 3">
       <div class="col-md-3">
-        <img class="img-rounded" alt="200x200" style="width: 200px; height: 200px; margin: 10px;" src="{% static 'images/sealion.JPG' %}">
+        <img class="img-rounded"
+         style="width: 250px; height: 120px; margin: 10px;"
+         src="{% static 'images/pelican.JPG' %}">
       </div>
       <div class="col-md-9">
         <p>info about animal 3 goes here</p>
@@ -58,55 +90,68 @@
     </div>
   </div>
   <hr class="divider 3">
-  <div class="row lifecycle">
+  <div class = "row lifecycle"
+  style="background-color:#E37222; color:#ffffff; padding: 10px 0px;">
+    <h2 class="lifecycle-heading" style="text-align: left; padding: 0px 15px">
+      Lifecycle of Plastic
+    </h2>
     <div class="col-md-auto">
-      <h2 class="lifecycle-heading">Lifecycle of Plastic</h2>
-      <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p style="font-size: 1.5em; padding: 25px 50px 10px; text-align: justify">
+        One of the biggest problems with plastic is that it does
+        not degrade well. Making more and more plastic to meet consumer demand
+        results in an accumulation of plastic that has nowhere to go! The
+        solution? Reduce, Reuse, and Recycle! When thinking about alternative
+        products for plastic and their environmental impact, a life cycle
+        analysis shows the environmental cost of making a product. The life of a
+        piece of plastic follows a 6-stage process: getting the ingredients via
+        a supplier, transporting the ingredients, manufacturing the ingredients
+        into a product, packaging the product, using the product, and disposing
+        of the product. For many plastics, the disposal portion of this lifecycle
+        can take over 1000 years. For biodegradable plastics, this can be
+        shortened to less than a year. If you introduce recycling, the disposal
+        portion can be skipped and the plastics can be made to make new products
+        without using the first three stages of the life cycle, which are costly
+        for the environment. </p>
     </div>
     <div class="picture row">
       <div class="col-md-3">
       </div>
       <div class="col-md-6">
-        <img class="featurette-image img-circle" alt="500x500" style="width: 500px; height: 500px;" src="{% static 'images/dolphin.jpeg' %}">
+        <img class="lifecycle-image img-circle"
+        style="width: 450px; height: 450px; padding: 25px"
+        src="{% static 'images/lifecycle.png' %}">
       </div>
       <div class="col-md-3">
       </div>
     </div>
   </div>
   <hr class="divider 4">
-  <div class="row pilot study">
+  <div class="row pilot study" style="background-color:#07889B; color:#ffffff">
     <div class="col-md-12">
-      <h2 class="heading">Solomon's Island: <span class="text-muted">A Pilot Study</span></h2>
-      <div class="col-md-auto">
-        <div class="col-md-auto">
-          <img class="featurette-image" style=" width: 300px; margin: 10px;" src="{% static 'images/dolphin.jpeg' %}">
-        </div>
-        <div>
-          <img class="featurette-image" style="width: 300px; margin: 10px;" src="{% static 'images/dolphin.jpeg' %}">
-        </div>
-        <div class="caption">
-          <p>Solomon's Island</p>
-        </div>
-        <div class="caption">
-          <p>Chesapeake Bay</p>
-        </div>
+      <h2 class="heading">Solomon's Island: A Pilot Study</h2>
+      <div class="col-md-6">
+        <img class="featurette-image" style=" width: 300px; height: 200px; margin: 10px;" src="{% static 'images/dolphin.jpeg' %}">
       </div>
-      <div class="col-md-auto">
+      <div class="col-md-6">
+        <img class="featurette-image" style="width: 300px; height: 200px; margin: 10px;" src="{% static 'images/dolphin.jpeg' %}">
       </div>
-    </div>
-    <hr>
+      <div class="col-md-6">
+        <p>Solomon's Island</p>
+      </div>
+      <div class="col-md-6">
+        <p>Chesapeake Bay</p>
+      </div>
+      </div>
     <div class="col-md-12">
-      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+         Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
   </div>
 </div>
 
-<footer class="container-fluid text-center">
+<hr>
+
+<footer class="container-fluid text-center" style="background-color:#E37222;color:#ffffff">
   <p>Footer Text</p>
 </footer>
 {% endblock %}
