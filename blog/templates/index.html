@@ -2,13 +2,13 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="container text-center">
+<div class="container-fluid text-left">
   <div class="row intro">
-    <div class="col-sm-12 text-left"
+    <div class="col-sm-12"
     style="background-color:#07889B; color:#ffffff; padding: 10px 20px;">
       <h1 style="font-size: 2.9em;">WHAT IS "PLASTIC-WATCH"?</h1>
       <div class="col-md-8 order-md-1">
-        <p class="lead" style="text-align: justify">
+        <p style="font-size: 1.4em; text-align: justify">
           <br>
           We want to change how people think about eating out.
           Do you go to restaurants and automatically get plastic straws in your drinks?
@@ -35,11 +35,11 @@
   </div>
   <hr class ="divider 1">
   <div class = "row diagram"
-  style="color:#ffffff; background-color:#EEAA7B; padding: 10px 0px;">
+  style="color:#ffffff; background-color:#E37222; padding: 10px 0px;">
     <h2 style="text-align: left; padding: 0px 15px">
       What is plastic and what does it do to the environment?
     </h2>
-    <h4 style="font-size: 1.5em; padding: 25px 50px 50px; text-align: justify">
+    <h4 style="font-size: 1.25em; padding: 25px 50px 50px; text-align: justify">
       Plastic is an organic polymer made up of long, well-packed carbon chains
       that makes it almost impossible to break down on its own. When rain or
       strong winds come through, they blow over trashcans or wash trash from the
@@ -53,17 +53,18 @@
       from the plastic. Plastic also floats in the ocean, getting caught up in
       the currents and forming “trash islands” that transport invasive species.
     </h4>
-    <img class="trash life cycle img-rounded"
-    style="width: 660px; height: 381px; margin: 0px 25px 25px; margin-left: auto; margin-right: auto;"
-    src="{% static 'images/trash-travel-diagram.jpg' %}">
+    <div style="text-align: center">
+      <img class="trash life cycle img-rounded"
+      style="width: 660px; height: 381px; margin: 0px 25px 25px; margin-left: auto; margin-right: auto;"
+      src="{% static 'images/trash-travel-diagram.jpg' %}">
+    </div>
   </div>
-  <hr class="divider 2">
-  <div class = "animal conservation"
-  style="background-color:#66B9BF; color:#ffffff; padding: 25px">
+  <div class = "row animal conservation"
+  style="background-color:#66B9BF; color:#ffffff; padding: 25px;">
     <div class="row animal 1">
       <div class="col-md-3">
         <img class="img-rounded"
-        style="width: 250px; height: 187px; margin: 10px;"
+        style="width: 250px; height: 157px; margin: 10px;"
         src="{% static 'images/seaturtle2.jpg' %}">
       </div>
       <div class="col-md-9">
@@ -83,75 +84,68 @@
     <div class="row animal 3">
       <div class="col-md-3">
         <img class="img-rounded"
-         style="width: 250px; height: 120px; margin: 10px;"
-         src="{% static 'images/pelican.JPG' %}">
+         style="width: 250px; height: 141px; margin: 10px;"
+         src="{% static 'images/pelican.jpg' %}">
       </div>
       <div class="col-md-9">
         <p>info about animal 3 goes here</p>
       </div>
     </div>
   </div>
-  <hr class="divider 3">
-  <div class = "row lifecycle"
-  style="background-color:#E37222; color:#ffffff; padding: 10px 0px;">
-    <h2 class="lifecycle-heading" style="text-align: left; padding: 0px 15px">
-      Lifecycle of Plastic
-    </h2>
-    <div class="col-md-auto">
-      <p style="font-size: 1.5em; padding: 25px 50px 10px; text-align: justify">
-        One of the biggest problems with plastic is that it does
-        not degrade well. Making more and more plastic to meet consumer demand
-        results in an accumulation of plastic that has nowhere to go! The
-        solution? Reduce, Reuse, and Recycle! When thinking about alternative
-        products for plastic and their environmental impact, a life cycle
-        analysis shows the environmental cost of making a product. The life of a
-        piece of plastic follows a 6-stage process: getting the ingredients via
-        a supplier, transporting the ingredients, manufacturing the ingredients
-        into a product, packaging the product, using the product, and disposing
-        of the product. For many plastics, the disposal portion of this lifecycle
-        can take over 1000 years. For biodegradable plastics, this can be
-        shortened to less than a year. If you introduce recycling, the disposal
-        portion can be skipped and the plastics can be made to make new products
-        without using the first three stages of the life cycle, which are costly
-        for the environment. </p>
+  <hr class="divider 2">
+  <div class = "row lifecycle" style="background-color:#ffffff;">
+    <div class="col-md-7">
+      <h2 class="lifecycle-heading" style="padding: 0px 15px">
+        Lifecycle of Plastic
+      </h2>
+      <p style="font-size: 1.25em; padding: 25px 50px 10px; text-align: justify">
+          One of the biggest problems with plastic is that it does
+          not degrade well. Making more and more plastic to meet consumer demand
+          results in an accumulation of plastic that has nowhere to go! The
+          solution? Reduce, Reuse, and Recycle! When thinking about alternative
+          products for plastic and their environmental impact, a life cycle
+          analysis shows the environmental cost of making a product. The life of a
+          piece of plastic follows a 6-stage process: getting the ingredients via
+          a supplier, transporting the ingredients, manufacturing the ingredients
+          into a product, packaging the product, using the product, and disposing
+          of the product. For many plastics, the disposal portion of this lifecycle
+          can take over 1000 years. For biodegradable plastics, this can be
+          shortened to less than a year. If you introduce recycling, the disposal
+          portion can be skipped and the plastics can be made to make new products
+          without using the first three stages of the life cycle, which are costly
+          for the environment. </p>
     </div>
-    <div class="picture row">
-      <div class="col-md-3">
-      </div>
-      <div class="col-md-6">
+    <div class="picture row col-md-5" style="text-align: center;">
         <img class="lifecycle-image img-circle"
-        style="width: 450px; height: 450px; padding: 25px"
-        src="{% static 'images/lifecycle.png' %}">
-      </div>
-      <div class="col-md-3">
-      </div>
+        style="width: 450px; height: 450px; padding: 10px; margin-left: auto; margin-right: auto;"
+        src="{% static 'images/lifecycle-border.png' %}">
     </div>
   </div>
-  <hr class="divider 4">
-  <div class="row pilot study" style="background-color:#07889B; color:#ffffff">
+  <hr class="divider 3">
+  <div class="row pilot study" style="background-color:#E37222; color:#ffffff; text-align:center">
     <div class="col-md-12">
       <h2 class="heading" style="text-align: left">
         Solomon's Island: A Pilot Study
       </h2>
-      <div class="col-md-6">
+      <div class="col-md-12">
         <img class="solomon-image"
         style=" width: 350px; height: 263px; margin: 10px;"
         src="{% static 'images/solomon.jpg' %}">
-      </div>
-      <div class="col-md-6">
         <img class="bay-image"
-        style="width: 485px; height: 263px; margin: 10px;"
+        style="width: 404px; height: 263px; margin: 10px;"
         src="{% static 'images/cbay.jpg' %}">
       </div>
-      <div class="caption-row" style="color:#EEAA7B; font-weight: bold">
-        <div class="col-md-6">
+      <div class="caption-row" style="font-weight: bold">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
           <p style="font-size: 1.5em;">Solomon's Island</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <p style="font-size: 1.5em;">Chesapeake Bay</p>
         </div>
+        <div class="col-md-3"></div>
+        </div>
       </div>
-    </div>
     <div class="col-md-12">
       <p style="font-size: 1.5em; padding: 25px 50px 10px; text-align: justify">
         In Summer of 2018, we are forming partnerships with up to four
@@ -175,7 +169,7 @@
 
 <hr>
 
-<footer class="container-fluid text-center" style="background-color:#E37222;color:#ffffff">
+<footer class="container-fluid text-center" style="background-color:#eeaa7b;">
   <p>Footer Text</p>
 </footer>
 {% endblock %}
